@@ -1,0 +1,287 @@
+/*====================
+=======Structure======
+======================*/
+
+header {
+  width: 100%;
+}
+
+main {
+  margin: 2rem auto;
+  max-width: 60%;
+}
+
+/*====================
+======Typography======
+======================*/
+
+h1, h2, h3, h4, h5, h6, a, p {
+  color: hsl(0, 0%, 0%);
+}
+
+h1, h2, h3, h4 {
+  font-family: "Roboto";
+}
+
+h5, h6, li {
+  font-family: "Roboto Condensed";
+}
+
+a, td, p, button, span {
+  font-family: "Roboto";
+  text-decoration: none;
+}
+
+button{
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+}
+
+/*====================
+========Image=========
+======================*/
+
+img {
+  object-fit: cover;
+  width: 100%;
+}
+
+/*====================
+=======Top_Menu=======
+======================*/
+
+.top-menu {
+  background-color: hsl(0, 0%, 90%);
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 20%;
+  width: 60%;
+}
+
+.top-menu-trending-news ul {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.top-menu-trending-news ul li {
+  font-family: "Roboto";
+  font-size: 0.8rem;
+}
+
+.top-menu-trending-news ul li:first-child {
+  color: hsl(0, 100%, 40%);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.top-menu-trending-news ul li:not(:first-child):not(:last-child)::after {
+  content: "-";
+  margin-left: 0.5rem;
+}
+
+.top-menu-islands ul{
+  display: flex;
+  gap: 0.5rem;
+}
+
+.top-menu-islands ul li {
+  font-size: 0.8rem;
+  font-family: "Roboto";
+}
+
+.top-menu-islands ul li {
+  text-transform: uppercase;
+}
+
+.top-menu-islands ul li:not(:last-child):after {
+  color: hsl(0, 0%, 67%);
+  content: "|";
+  margin-left: 0.5rem;
+}
+
+/*====================
+======Header_Menu=====
+======================*/
+
+.main-header {
+  align-items: center;
+  background-color: hsl(0, 100%, 40%);
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 20%;
+  width: 60%;
+}
+
+.main-header-hamburger button svg{
+  width: 2rem;
+}
+
+.main-header-hamburger button svg path{
+  fill: hsl(0, 0%, 100%);
+}
+
+.main-header-logo svg {
+  height: 3rem;
+  transform: translateX(25%);
+}
+
+.main-header-logo svg path {
+  fill: hsl(0, 0%, 100%);
+}
+
+.main-header-access {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.main-header-access-login button {
+  align-items: center;
+  background-color: hsl(207, 17%, 88%);
+  border-radius: 0.1rem;
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.2rem 0.5rem;
+}
+
+.main-header-access-login button span {
+  font-size: 0.9rem;
+}
+
+.main-header-access-login button svg {
+  width: 1.5rem;
+}
+
+.main-header-access-register button {
+  background-color: hsl(47, 100%, 50%);
+  border-radius: 0.1rem;
+  padding: 0.4rem 0.5rem;
+}
+
+.main-header-access-register button span {
+  font-style: italic;
+  font-weight: 600;
+}
+
+/*====================
+=====Main Menu========
+======================*/
+
+.main-menu {
+  background-color: hsl(0, 0%, 90%);
+  padding: 0.5rem 20%;
+  width: 60%;
+}
+
+.main-menu ul{
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-menu ul li:first-child svg {
+  width: 1.5rem;
+}
+
+.main-menu ul li:last-child svg {
+  width: 1rem;
+}
+
+.main-menu ul li a {
+  font-family: "Roboto Condensed";
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/*====================
+========Columns=======
+======================*/
+
+.two-columns-aside{
+  display: flex;
+  gap: 3rem;
+}
+
+.column-aside{
+  flex: 1;
+}
+
+.column-main{
+  flex: 2;
+}
+
+.one-column, .two-columns,
+.three-columns, .four-columns{
+  display: flex;
+  gap: 2rem;
+}
+
+.one-column div, .two-columns div,
+.three-columns div, .four-columns div{
+  flex: 1;
+}
+
+/*====================
+=========Ad===========
+======================*/
+
+.sticky-banner {
+  margin-bottom: 2rem;
+  position: sticky;
+  top: 20vh;
+}
+
+/*====================
+=========News=========
+======================*/
+
+.news {
+  margin-bottom: 2em;
+}
+
+.news.inline{
+  display: flex;  
+  gap: 0.5rem;
+}
+
+.news h1 {
+  font-size: 2.7rem;
+  font-weight: 600;
+}
+
+.news h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2rem;
+}
+
+.news h3, .news h4 {
+  font-size: 1.1rem;
+  line-height: 1.25em;
+}
+
+.news-author {
+  margin: 0.5rem 0;
+}
+
+.news-author span {
+  color: hsl(0, 0%, 33%);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.news-subtitle {
+  margin: 0.5rem 0;
+}
+
+.news-subtitle span {
+  color: hsl(0, 0%, 33%);
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.news-subtitle.highlight span {
+  color: hsl(0, 100%, 40%);
+}
